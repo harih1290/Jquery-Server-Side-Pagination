@@ -137,7 +137,7 @@ $(function(){
  
             debugger;
  
-            casalert(x.readyState + " " + x.status + " " + e.msg);
+            alert(x.readyState + " " + x.status + " " + e.msg);
  
         }
 
