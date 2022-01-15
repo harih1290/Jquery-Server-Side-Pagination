@@ -1,19 +1,9 @@
-function check(){
-console.log("Checking");
-}
 $(function(){
 
     var model={
         "info":"1234"   //Parameter your wise
     };
-    $.ajax({
-        URL:'@Url.Action("GetPagination","Pagination")',
-        Data:JSON.stringify(model),
-        type: "POST",
-        success: function (result) {
-            $('#DTGrid').empty();
- 
-            $('#DTGrid').DataTable({
+    $('#DTGrid').DataTable({
  
                 "processing": true,
  
@@ -132,15 +122,5 @@ $(function(){
                 "bDestroy": true
  
             });
-        },
-        error: function (x, e) {
- 
-            debugger;
- 
-            alert(x.readyState + " " + x.status + " " + e.msg);
- 
-        }
-
-    });
-
+        
 });

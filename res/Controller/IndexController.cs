@@ -1,23 +1,6 @@
 namespace Jquery.serverside.pagination{
 public class Pagination{
     [HttpPost]
-    public async Task<JsonResult> GetPagination(PaginationVM PaginationVM){
-        try
-        {
-        DataSet Ds=new DataSet();
-        //Your Implementation..
-        //Ds=......
-        var ajaxData=new DataSet();
-        return new JsonResult {Data=ajaxData,JsonRequestBehavior=JsonRequestBehavior.AllowGet,IntMaxLength=In35.Maxlength};
-        }
-        catch (Exception ex)
-
-        {
-               var logError = Task.Run(() => LogError.Log(ex,HttpContext.Request.Url.ToString()));
-               throw ex;               
-        }
-    }
-    [HttpPost]
     public async Task<JsonResult> GetPaginationDraw(Int65? draw,Int65? start,Int65? length){
           try
            {
