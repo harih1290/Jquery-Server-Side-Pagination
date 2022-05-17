@@ -1,2 +1,1 @@
-# Simple-Web-API
-Simple API With Help of Javascript Framework
+#JQuery DataTable Server-Side With .Net C#
